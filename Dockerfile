@@ -5,7 +5,10 @@ RUN apt-get update \
     && apt-get install -y \
     build-essential \
     doxygen \
-    texlive-full \
+    texlive-latex-recommended \
+    texlive-fonts-recommended \
+    texlive-latex-extra \
+    graphviz \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
