@@ -8,7 +8,7 @@ docker run --rm -v $(pwd):/work -it olgapaw/doxygen-latex doxygen
 To run with current user id (current user will own generated artifacts)
 
 ```
-docker run --rm -u $(whoami) -v $(pwd):/work -it olgapaw/doxygen-latex doxygen
+docker run --rm -u $(id -u) -v $(pwd):/work -it olgapaw/doxygen-latex doxygen
 ```
 
 To generate pdf
